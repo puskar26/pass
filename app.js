@@ -50,3 +50,19 @@ aLink.addEventListener("click", () => {
     clicked.classList.remove("show");
   }, 2000);
 });
+let elem = document.querySelector(".content");
+let mode = document.body;
+let changeText = document.querySelector(".modes");
+let isOn = false;
+function Toggle() {
+  mode.classList.toggle("dark");
+  elem.classList.toggle("shadow");
+  password.classList.toggle("dark-container");
+  if (!isOn) {
+    changeText.innerHTML = `Dark Mode`;
+    isOn = true;
+  } else {
+    changeText.innerHTML = `Light Mode`;
+    isOn = false;
+  }
+}

@@ -12,9 +12,9 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="dark">
     <main id="main" class="flex justify width">
-      <div class="content flex">
+      <div class="content shadow flex">
         <div class="header width flex justify align">
           <h1>Password Generator</h1>
         </div>
@@ -35,14 +35,14 @@
           <div class="error flex justify"></div>
         </div>
         <div class="buttons width flex justify align">
-          <button onclick="generate();">Generate</button>
+          <button class="enter" onclick="generate();">Generate</button>
           <button onclick="reset();">Reset</button>
         </div>
         <div class="password width flex flex-col align">
           <div>Your Password is:</div>
 
           <div class="container width">
-            <div id="sample" class="pass-display width"></div>
+            <div id="sample" class="dark-container pass-display width"></div>
             <div class="clipboard">
               <a
                 class="link"
@@ -73,7 +73,8 @@
         </div>
       </div>
     </main>
-    <footer class="footer flex justify">
+    <footer class="footer flex justify align">
+      <button onclick="Toggle();" class="modes">Light Mode</button>
       <div>
         Created by
         <a href="https://www.pushkarniraula.com.np">Pushkar Niraula</a>

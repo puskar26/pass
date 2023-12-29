@@ -25,6 +25,14 @@
   height: 600px;
   padding-top: 4rem;
 }
+/* Dark Mode */
+.dark{
+  background-color: #111827;
+  color: white;
+  }
+  .dark-container{
+    color: #111827;
+  }
 .content {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -32,6 +40,9 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
+}
+.shadow{
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
 }
 h1 {
   color: #0ea5e9;
@@ -143,10 +154,17 @@ input:focus {
 }
 .footer{
   margin-top: 10px;
+  gap: 1rem;
 }
 .footer a{
   text-decoration: none;
   color: #0a96d6;
+}
+.modes{
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+ cursor: pointer;
 }
 @media (max-width: 400px) {
   .content {
