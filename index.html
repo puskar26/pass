@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="main" class="flex justify width">
+      <div class="content flex">
+        <div class="header width flex justify align">
+          <h1>Password Generator</h1>
+        </div>
+        <div class="input width">
+          <div class="input-container flex flex-col">
+            <label for="">Enter the length of your password:</label>
+            <input
+              class="pass-input"
+              type="number"
+              max="20"
+              min="8"
+              placeholder="eg : 8 "
+            />
+            <p>
+              <i><sup>*</sup> Enter something between 8-20 <sup>*</sup></i>
+            </p>
+          </div>
+          <div class="error flex justify"></div>
+        </div>
+        <div class="buttons width flex justify align">
+          <button onclick="generate();">Generate</button>
+          <button onclick="reset();">Reset</button>
+        </div>
+        <div class="password width flex flex-col align">
+          <div>Your Password is:</div>
+
+          <div class="container width">
+            <div id="sample" class="pass-display width"></div>
+            <div class="clipboard">
+              <a
+                class="link"
+                href="#"
+                onclick="CopyToClipboard('sample');return false; hoverCard();"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="none"
+                  class="icon"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M6.529 8.07c0-.851.69-1.542 1.541-1.542h8.334c.851 0 1.541.69 1.541 1.542v8.334c0 .85-.69 1.541-1.541 1.541H8.07c-.851 0-1.541-.69-1.541-1.541V8.07Zm1.541-.125a.125.125 0 0 0-.125.125v8.334c0 .069.056.125.125.125h8.334a.125.125 0 0 0 .125-.125V8.07a.125.125 0 0 0-.125-.125H8.07ZM1.792 3.333c0-.851.69-1.541 1.541-1.541h8.334c.851 0 1.541.69 1.541 1.541v1.09a.708.708 0 0 1-1.416 0v-1.09a.125.125 0 0 0-.125-.125H3.333a.125.125 0 0 0-.125.125v8.334c0 .069.056.125.125.125h1.09a.708.708 0 1 1 0 1.416h-1.09c-.851 0-1.541-.69-1.541-1.541V3.333Z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+
+              <div class="copy">Copy</div>
+              <div class="copied">Copied</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer flex justify">
+      <div>
+        Created by
+        <a href="https://www.pushkarniraula.com.np">Pushkar Niraula</a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
