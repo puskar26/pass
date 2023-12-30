@@ -7,6 +7,7 @@ This is a simple web-based random password generator created using HTML, CSS, an
 - Generates random passwords.
 - Allows users to choose password length.
 - Copy-to-clipboard functionality for easy use.
+- Light Mode - Dark Mode toggling functionality.
 
 ## How to Use
 
